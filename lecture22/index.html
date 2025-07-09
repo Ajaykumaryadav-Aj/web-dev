@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            height: 650px;
+            border: solid red 2px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .box{
+            --primary-color: purple;
+            --primary-width:330px;
+            background-color:rgb(236, 225, 225);
+            height: 350px;
+            width: var(--primary-width);
+            margin: 10px;
+            padding: 5px;
+            border: solid rgb(204, 124, 124) 2px;
+            /* box-shadow: 10px 15px red; */
+            /* box-shadow: 10px 15px 5px red; */
+            /* box-shadow: 10px 15px 5px 100px rgba(147, 0, 149, 0.502); */
+            /* box-shadow: inset 10px 15px brown; */
+
+            /* Multiple shadow */
+            box-shadow: 10px 5px var(--primary-color), 15px 7px green;
+
+        }
+        img{
+            width: 100px;
+        }
+        #head1{
+            /* text-shadow: 12px 10px 2px white; */
+            /* text-shadow: 10px 12px; */
+            /* text-shadow: yellow 12px 15px 2px; */
+            text-shadow: 15px 15px red, 10px 5px green, 4px 2px blue;
+
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <img src="laptop.jpeg" alt="" />
+        <h2 id="head1">Welcome to Mycode</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe sunt
+          repellat officia, qui placeat et eligendi dignissimos animi quod
+          perferendis minus asperiores ad dicta veritatis a dolorum adipisci
+          dolor sequi!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
