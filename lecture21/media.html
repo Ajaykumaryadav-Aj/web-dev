@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* #c1{
-            height: 200px;
-            width: 500px;
-            background-color: green;
-        } */
-         .container{
-            height: 200px;
-            width: 500px;
-            background-color: green;
-            border: solid red 1px;
+         .box{
+           height: 200px;
+           width: 400px;
+            background-color: purple;
+            border: solid red 3px;
+        }
+
+        @media (min-width:300px) and (max-width:500px){
+            .box{
+              background-color: aqua;  
+            }
         }
     </style>
 </head>
 <body>
-    
-    <div id="c1" class="Container">
-       
+    <div class="box">
+        Hello
     </div>
 </body>
 </html>
