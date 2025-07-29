@@ -105,8 +105,48 @@
 
 // Find()
 
-let users = [{id: 1, name : "Ajay"},{id: 2, name : "Rahul"},{id: 3, name : "Vishal"}];
-let result = users.find((user)=>{
- return   user.name === "Rahul";
-})
-console.log(result);
+// let users = [{id: 1, name : "Ajay"},{id: 2, name : "Rahul"},{id: 3, name : "Vishal"}];
+// let result = users.find((user)=>{
+//  return   user.name === "Rahul";
+// })
+// console.log(result);
+
+
+// let arr = [10,20,30];
+// let length = arr.length;
+
+// // console.log(length);
+
+// arr.forEach((value, index)=>{
+//     console.log("Number :", value, "index :" ,index );
+    
+// });
+
+// for(let val of arr){
+//     console.log(val);
+    
+// }
+
+// let myName = "Ajay";
+// for(let name of myName){
+//     console.log(name);
+    
+// }
+
+
+let arr = [10,20,30,40];
+
+function getSum(arr){
+
+
+let sum = 0;
+arr.forEach((value)=>{
+sum = sum + value;
+}
+
+)
+return sum;
+}
+let totalSum = getSum(arr);
+console.log(totalSum);
+
