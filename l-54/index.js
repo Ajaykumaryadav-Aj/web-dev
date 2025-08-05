@@ -35,11 +35,43 @@
 
 // best code 
 
-let fragment = document.createDocumentFragment();
+// let fragment = document.createDocumentFragment();
 
-for(let i = 1; i<=50; i++){
-    let para = document.createElement('p');
-    para.textContent = "This is paragraph : "+ i;
-    fragment.appendChild(para);
+// for(let i = 1; i<=50; i++){
+//     let para = document.createElement('p');
+//     para.textContent = "This is paragraph : "+ i;
+//     fragment.appendChild(para);
+// }
+// document.body.appendChild(fragment);
+console.log("Start");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// synchronous programming
+
+
+function task1() {
+    console.log("Task 1 started");
+    // Simulate a delay (synchronous)
+    for (let i = 0; i < 1e9; i++) {}  // This loop takes time
+    console.log("Task 1 completed");
 }
-document.body.appendChild(fragment);
+
+function task2() {
+    console.log("Task 2 started");
+    console.log("Task 2 completed");
+}
+
+task1();  // First, task1 will execute completely
+task2();  // Then, task2 will execute after task1 finishes
